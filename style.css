@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+:root {
+    --primary-font: 'Cairo', sans-serif;
+    --secondary-font: 'Cairo', sans-serif;
+    --third-font: 'Cairo', sans-serif;
+    --primary: #0060fe;
+    --gold: #FFB830;
+    --dark: #0b0c1b;
+    --semi-dark: #1a1b2e;
+    --semi-dark-2: #212235;
+    --text-gray: #9193a8;
+    --red: #ec625f;
+    --border: #e2e9ee;
+    --light: #f4f8fb;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--semi-dark-2);
+    height: 80px;
+}
+
+.navbar a {
+    font-family: var(--primary-font);
+    cursor: pointer;
+    color: var(--gold);
+    margin: 0 15px;
+    position: relative;
+    right: 7rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    top: 2px;
+    transition: color 0.3s ease;
+}
+
+.navbar img {
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 16%;
+    cursor: pointer;
+}
+
+.navbar h3 {
+    cursor: pointer;
+    font-family: bold;
+    font-family: var(--primary-font);
+    position: relative;
+    color: var(--border);
+    left: 13rem;
+    gap: 25px;
+}
+
+.navbar h3:hover {
+    color: var(--gold);
+}
+
+.navbar a:hover {
+    color: var(--border);
+}
+
+.samples {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.samples img {
+    position: relative;
+    top: 10rem;
+    right: 7rem;
+    width: 10%;
+}
+
+.main img {
+    display: block;
+    position: fixed;
+    margin-left: 65%;
+    margin-bottom: 15%;
+}
+
+.main h1 {
+    cursor: pointer;
+    font-family: bold;
+    font-family: var(--primary-font);
+    position: relative;
+    margin-left: 10%;
+    color: var(--border);
+}
+
+.main h3 {
+    font-family: bold;
+    cursor: pointer;
+    font-family: var(--primary-font);
+    position: relative;
+    opacity: .7;
+    margin-left: 10%;
+    color: var(--border);
+}
+
+.cards {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    position: relative;
+    top: 5rem;
+    grid-gap: 40px;
+}
+
+#webcam-container {
+    position: relative;
+    margin-left: 40%;
+    padding: 15px 15px 5px 15px;
+    background-color: #1c1b29;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-right: 36.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+    bottom: 1rem;
+    display: none; /* hide the element initially */
+}
+
+
+#label-container {
+    color: var(--border);
+    position: relative;
+    border: none;
+    color: white;
+    gap: 25px;
+    display: flex;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    margin-left: 33%;
+    top: 15rem;
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    margin-left: 10%;
+    top: 1rem;
+    background-color: var(--gold);
+    border: none;
+    color: white;
+    padding: 15px 83.5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.card {
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.container {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.container:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.details {
+    padding: 20px 15px;
+}
+
+.details>h3 {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details>p {
+    color: #a0a0a0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: var(--primary-font);
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.footer {
+    position: relative;
+    cursor: pointer;
+    color: var(--border);
+    font-family: var(--primary-font);
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5.5%;
+    margin-bottom: 5px;
+    opacity: .8;
+}
